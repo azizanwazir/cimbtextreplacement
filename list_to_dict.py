@@ -10,8 +10,8 @@ def listToDict(lst, dct):
 	for pair in lst:
 		#split pair into key and value
 		key = pair.split(":")[0]
-		value = pair.split(":")[1]
-		value = value.strip()
+		value = pair.split(":")[1] #Change delimiter as necessary
+		value = value.strip() #strip() removes leading and trailing spaces
 
 		#check if multiple keys to single value
 		if "," in key:
